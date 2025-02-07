@@ -64,15 +64,17 @@ function App() {
   return (
     <div className="app-container">
       <div className="header-container">
-        <h1 className="main-header">
-          Meet Your Personal
-          <br />
-          <span className="highlight">Recipe AI</span>
-        </h1>
+        <div className="title-container">
+    <img src="/images/ai_chef.png" alt="AI Chef" className="ai-chef-image" />
+
+          <h1 className="main-header">
+            Meet Your Personal
+            <br />
+            <span className="highlight">Recipe AI</span>
+          </h1>
+        </div>
         <p className="description">
-          Simply type a few ingredients using the format ingredient1,
-          ingredient2, etc., and Recipe AI will generate an all-new recipe on
-          demand...
+          Simply type a few ingredients and click <span style={{ color: "#007bff" }}>Generate</span> to get a recipe suggestion!
         </p>
       </div>
       <form onSubmit={onSubmit} className="form-container">

@@ -20,6 +20,7 @@
   font-size: 2.25rem;
   font-weight: bold;
   color: #1a202c;
+  text-align: center; /* Centra il testo del titolo */
 }
 
 .main-header .highlight {
@@ -98,4 +99,18 @@
   color: black;
   font-weight: bold;
   text-align: left; /* Align text to the left */
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Spazio tra l'immagine e il titolo */
+  position: relative; /* Imposta il contenitore come riferimento per il posizionamento assoluto */
+  text-align: center; /* Centra il contenuto in modo naturale */
+}
+
+.ai-chef-image {
+  width: 200px; /* Larghezza dell'immagine */
+  margin-left: -200px; /* Spazio a sinistra dell'immagine */
 }
